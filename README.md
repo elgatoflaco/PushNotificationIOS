@@ -12,7 +12,7 @@ Para habilitar el soporte a eventos, en la parte superior de su AppDelegate.m, a
 
 Después en `AppDelegate.m`, agrega lo siguiente:
 
-`// Required to register for notifications
+```// Required to register for notifications
    - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
    {
     [RCTPushNotificationManager didRegisterUserNotificationSettings:notificationSettings];
@@ -37,4 +37,4 @@ Después en `AppDelegate.m`, agrega lo siguiente:
    - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
    {
     [RCTPushNotificationManager didReceiveLocalNotification:notification];
-   }`
+   }```
